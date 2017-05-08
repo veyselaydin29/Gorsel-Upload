@@ -46,12 +46,12 @@
 					$pdo->prepare($sql)->execute([$yeniDosyaAdi]);
 
 			    	echo "Dosyanızın adresi <br>";
-			    	echo "<textarea autofocus style='resize: none;' rows='2' cols='50'>http://".$_SERVER[HTTP_HOST]."/".$yeniDosyaAdi."</textarea>";
+			    	echo "<textarea autofocus style='resize: none;' rows='2' cols='50'>http://".$dir.$yeniDosyaAdi."</textarea>";
 			    } else {
 			        echo "Bir hata oluştu";
 			    }
 			}
-			echo "<br><a href='http://".$_SERVER[HTTP_HOST]."'>Ana sayfa</a>";
+			echo "<br><a href='http://".$dir."'>Ana sayfa</a>";
 		?>
 		
 
