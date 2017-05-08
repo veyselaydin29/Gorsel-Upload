@@ -1,4 +1,7 @@
 <?php
+	if (!file_exists('uploads')) {
+	    mkdir('uploads', 0777, true);
+	}
 	include("kontrol.php");
 	include("ayar.php");
 	if ($kontrol != 0) {
